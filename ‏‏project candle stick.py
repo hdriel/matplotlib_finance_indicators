@@ -62,7 +62,6 @@ def GraphIt(stockName,  times = None ):
     '''
         This function get:
         *  stockName - need to be a valid ticker/symbol from 'quandl' database
-        *  bayAt     - get the price of the stock that bought (optional as random value)
         *  times     - get the peroid of time from now to back , like: '10y' (10 years) , '5m' (5 months)  or '30d' (30 days) (optinal as '10y')
                        a valid param times can be specific time like:
                        ( start = dt.datetime(2000,1,1) , end   = dt.datetime(2016,12,31) )
