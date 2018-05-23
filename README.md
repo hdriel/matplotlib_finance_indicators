@@ -1,6 +1,6 @@
 # matplotlib Finance indicators
 
-### Python , matplotlib, threads
+### Python , matplotlib
 
 ## Description
 
