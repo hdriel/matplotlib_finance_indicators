@@ -58,7 +58,7 @@ def getRandomSymbol():
     return (rand_symbol, Symbol)
    
     
-def GraphIt(stockName,  bayAt = 'random', times = None ):
+def GraphIt(stockName,  times = None ):
     '''
         This function get:
         *  stockName - need to be a valid ticker/symbol from 'quandl' database
@@ -315,14 +315,14 @@ def GraphIt(stockName,  bayAt = 'random', times = None ):
         generateFile(stockName)
     
     try:
-        show_graph(stockName, bayAt = bayAt)
+        show_graph(stockName, times)
     except:
         ## if we have exception like Missing Data , we create a new data in range of ten years from now to back
         print('catch exception')
         times = '10y'
         generateFile(stockName)
         ## and try to load and show the graph again
-        show_graph(stockName, bayAt = bayAt)
+        show_graph(stockName, times)
 
         
 ##---------------------------------------------------------------------------------------------------------
